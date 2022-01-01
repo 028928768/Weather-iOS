@@ -8,10 +8,33 @@
 import UIKit
 
 class WeatherViewController: UIViewController {
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        customiseUI()
+        configure()
+        
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
+    }
+
+    private func customiseUI() {
+     
+        setupStatusBarAndTabbar()
+    }
+    
+    private func configure() {
+        
+    }
+    
+    private func setupStatusBarAndTabbar() {
+//        statusbarViewConstraint.constant = UIApplication.shared.statusBarFrame.height
     }
 
 
